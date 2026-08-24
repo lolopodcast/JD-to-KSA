@@ -24,7 +24,7 @@ tailwind.config = {
 </script>
 
 <style>
-  html, body { overflow-x: hidden; }
+  html, body { overflow-x: clip; }
   body { font-family: 'Inter', sans-serif; }
   @keyframes fadeInUp { from{opacity:0;transform:translateY(15px)} to{opacity:1;transform:translateY(0)} }
   .animate-fade-in { animation: fadeInUp 0.5s ease-out forwards; }
@@ -2459,7 +2459,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col pt-16 overflow-x-hidden" onClick={bumpClick}>
+    <div className="min-h-screen flex flex-col pt-16 overflow-x-clip" onClick={bumpClick}>
       {/* HEADER */}
       <header className="fixed top-0 left-0 right-0 h-16 bg-[#004030] dark:bg-slate-900 text-white z-50 shadow-lg border-b border-[#D8C3A5]/30">
         <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
